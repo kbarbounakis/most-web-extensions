@@ -2,7 +2,7 @@
 
 Most Web Framework Login Pages Extension
 
-Add standard login pages and views by by registering this extension in application configuration as follows:
+Add standard login pages and views by registering this extension in application configuration as follows:
 
     {
       ...
