@@ -1,0 +1,33 @@
+<%# { "layout":"./../../shared/bootstrap.html.ejs", "title":"Login Page" } %>
+<% locals = locals || {} %>
+<div class="col-md-4 col-md-push-4">
+    <div class="panel panel-primary">
+        <div class="panel-heading panel-heading-card">
+                <h4>Please type your username and password</h4>
+        </div>
+        <div class="panel-body">
+            <form class="form-login" data-parsley-validate method="post" action="/login.html">
+                <%- locals.html.antiforgery() %>
+                <div class="form-group">
+                    <label for="username" class="sr-only">Username</label>
+                    <input type="text" id="inputEmail" class="form-control" placeholder="Username..." data-parsley-required-message="You must provide a valid username" data-parsley-required="true" autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="sr-only">Password</label>
+                    <input class="form-control" name="credentials[password]" placeholder="Password..." data-parsley-required-message="You must provide a valid password" type="password" id="password" data-parsley-required="true">
+                </div>
+                <% if (locals.data.message) { %>
+                <div class="form-group">
+                    <span class="text-danger"><%=locals.data.message%></span>
+                </div>
+                <% } %>
+                <button class="btn btn-lg btn-primary" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#username').focus();
+        })
+    </script>
+</div>

@@ -1,0 +1,29 @@
+{
+  "name": "most-web-extensions",
+  "version": "1.0.0",
+  "description": "MOST Web Framework Extensions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kbarbounakis/most-web-extensions.git"
+  },
+  "keywords": [
+    "most",
+    "web",
+    "auth",
+    "login",
+    "extension"
+  ],
+  "dependencies": {
+    "most-web":"~1.7.0"
+  },
+  "author": "Kyriakos Barbounakis <k.barbounakis@gmail.com>",
+  "license": "BSD3-Clause",
+  "bugs": {
+    "url": "https://github.com/kbarbounakis/most-web-extensions/issues"
+  },
+  "homepage": "https://github.com/kbarbounakis/most-web-extensions"
+}

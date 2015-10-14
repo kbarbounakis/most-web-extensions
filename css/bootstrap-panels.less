@@ -1,0 +1,31 @@
+@import "bootstrap-variables";
+body {
+  /*
+  panels
+  */
+  .panel {
+    border-radius: 0;
+    border: none;
+    > .panel-body {
+      background-color: @panel-default-bg;
+      padding: 32px;
+    }
+    > .panel-heading {
+      display: flex;
+      h4 {
+        display: flex;
+        align-self: flex-end;
+        font-weight: 400;
+      }
+      &.panel-heading-card {
+        min-height: 148px;
+      }
+    }
+    &.panel-primary {
+      > .panel-heading {
+        border-radius: 0;
+        background-color: @color-primary;
+      }
+    }
+  }
+}

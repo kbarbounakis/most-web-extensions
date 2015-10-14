@@ -1,0 +1,52 @@
+@import "bootstrap-variables";
+
+body {
+  /*
+  forms
+  */
+  .btn {
+    border-radius: 0;
+    padding: 8px 12px;
+    text-transform: uppercase;
+  }
+  .btn-primary {
+    background-color: @color-primary;
+    border-radius: 0;
+    border: solid 1px darken(@color-primary, 5%);
+    &:hover {
+      background-color: lighten(@color-primary, 5%);
+      border: solid 1px @color-primary;
+    }
+    &:active:focus {
+      border: solid 1px lighten(@color-primary, 15%);
+      background-color: lighten(@color-primary, 15%);
+    }
+    &:focus {
+      border: solid 1px lighten(@color-primary, 15%);
+      background-color: lighten(@color-primary, 15%);
+      -webkit-transition: background-color 1000ms linear;
+      -moz-transition: background-color 1000ms linear;
+      -o-transition: background-color 1000ms linear;
+      -ms-transition: background-color 1000ms linear;
+      transition: background-color 1000ms linear;
+    }
+  }
+  .btn-success {
+    background-color: @color-success;
+    border-radius: 0;
+    border: solid 1px darken(@color-success, 5%);
+    &:hover {
+      background-color: lighten(@color-success, 5%);
+      border: solid 1px @color-success;
+    }
+  }
+  .btn-danger {
+    background-color: @color-danger;
+    border-radius: 0;
+    border: solid 1px darken(@color-danger, 5%);
+    &:hover {
+      background-color: lighten(@color-danger, 5%);
+      border: solid 1px @color-danger;
+    }
+  }
+}
